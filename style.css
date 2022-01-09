@@ -1,0 +1,95 @@
+.section-padding{
+    position: relative;
+    padding: 40px 0;
+}
+.section-bg{
+    background-image: url(assets/img/home.jpg);
+    position: absolute;
+    background-size: cover;
+    left: 0;
+    top: 0;
+    height: 800px;
+    width: 100%;
+    background-position: center;
+}
+
+.section-bg:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #111338;
+    opacity: .8;
+}
+
+.main-menu ul {
+    text-align: right;
+}
+
+.main-menu ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.main-menu li a {
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-menu li:hover a{
+    text-decoration: none;
+    background-color: rgb(107, 139, 70);
+    transition: .5s;
+}
+
+.main-menu li:last-child:hover a{
+    background-color: #2D4A79;
+    cursor: pointer;
+}
+
+.logo h2 {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.hero-section {
+    margin-top: 180px;
+}
+
+.hero-section h1 {
+    color: #fff;
+    font-size: 90px;
+    text-transform: uppercase;
+    line-height: 80px;
+}
+
+span {
+    font-weight: bold;
+}
+
+button.btn {
+    margin-top: 50px;
+    padding: 5px 40px;
+    border-radius: 20px;
+    outline: none;
+    position: relative;
+}
+
+.icon {
+    text-align: right;
+    margin-top: 12rem;
+}
+
+.icon a {
+    background-color: #262926;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+}
