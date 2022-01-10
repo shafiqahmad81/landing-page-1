@@ -73,14 +73,6 @@ span {
     font-weight: bold;
 }
 
-button.btn {
-    margin-top: 50px;
-    padding: 5px 40px;
-    border-radius: 20px;
-    outline: none;
-    position: relative;
-}
-
 .icon {
     text-align: right;
     margin-top: 12rem;
@@ -92,4 +84,34 @@ button.btn {
     color: #fff;
     font-size: 30px;
     padding: 10px;
+}
+
+button.btn {
+    margin-top: 50px;
+    padding: 5px 40px;
+    border-radius: 20px;
+    outline: none;
+    position: relative;
+    border: none;
+    overflow: hidden;
+}
+
+button.btn:before {
+    position: absolute;
+    content: "book now";
+    width: 100%;
+    height: 100%;
+    padding: 5px 40px;
+    border-radius: 20px;
+    background-color: #001801;
+    color: #fff;
+    left: -107%;
+    top: 0px;
+    z-index: -1;
+    transition: .5s ease all;
+}
+
+button.btn:hover:before {
+    left: 0;
+    z-index: 1;
 }
